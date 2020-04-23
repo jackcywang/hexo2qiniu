@@ -13,7 +13,7 @@ secret_key =
 #构建鉴权对象
 q = Auth(access_key, secret_key)
 
-website = "http://cdn.wangng.com/"
+website = "http://cdn.wangng.com/"  #七牛云的外链域名
 
 #要上传的空间
 bucket_name = 'jaywnag'
@@ -74,40 +74,3 @@ if __name__ == "__main__":
 
             
         
-                    
-                    
-
-            
-
-
-
-
-
-
-
-# #上传后保存的文件名
-# key = 'hexo为博客创建唯一链接/abbrlink.png'
-
-# #生成上传 Token，可以指定过期时间等
-# token = q.upload_token(bucket_name, key, 3600)
-
-# #要上传文件的本地路径
-# localfile = './md/hexo为博客创建唯一链接/abbrlink.png'
-
-# ret, info = put_file(token, key, localfile)
-# print(info)
-# assert ret['key'] == key
-# assert ret['hash'] == etag(localfile)
-
-# urls = "http://cdn.wangng.com/"+key
-
-# with open("./md/hexo为博客创建唯一链接.md",'r', encoding='UTF-8') as fr:
-#     data = fr.read()
-# lines = data.split('\n')
-# with open("./md/hexo为博客创建唯一链接.md",'w',encoding='UTF-8') as fw:
-#     for line in lines:
-#         if '![]' in line:
-#             old = line.split('(')[-1][:-1]
-#             line = line.replace(old,urls)
-#         newline = line + '\n'
-#         fw.write(newline)
