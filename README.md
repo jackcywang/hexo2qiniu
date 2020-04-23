@@ -8,9 +8,11 @@ hexo2qiniu.py的功能是将本地博客中的图片批量上传到七牛云镜�
 图三是你七牛云上传的结果
 ![](https://github.com/jackcywang/hexo2qiniu/blob/master/images/qiniu.png)
 
-话不多说.现在开始操作.
+话不多说.现在开始操作.**以防万一，一定要备份**
 * md文件和图片存放形式(如果md文件不包含图片也没问题)
-![](https://github.com/jackcywang/hexo2qiniu/blob/master/images/cunfang.png)
+<div align=center>
+<img src=https://github.com/jackcywang/hexo2qiniu/blob/master/images/cunfang.png>
+</div>
 * 安装依赖
 ```
 pip install qiniu
